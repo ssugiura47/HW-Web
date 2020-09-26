@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visual 1</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class=navigation>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-title" href="index.html">COVID-19</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Plots
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="income_mortality.html" target="_blank">Income and Mortality Rate </a>
+                    <a class="dropdown-item" href="density_mortality.html" target="_blank">Population Density and Mortality Rate</a>
+                    <a class="dropdown-item" href="state_mortality.html" target="_blank">Mortality Rate of each States</a>
+                    <a class="dropdown-item" href="density_cases.html" target="_blank">Population Density and Cases without Outliers</a>
+                  </div>
+            <li class="nav-item">
+              <a class="nav-link" href="Comparison.html" target="_blank">Comparison</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Data.html" target="_blank">Data</a>
+            </li>
+          </li>
+        </ul>
+      </div>
+    </nav>
+</div>
+
+<div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-12">
+        <!-- Left box  -->
+        <div class="box">
+          <h3 class="title">Income Bins by Mortality Rate</h3>
+          <hr>
+          <img src="Images/income_mortality.png" class="images" alt="Income Bins by Mortality Rate Image">
+        </br>
+      </br>
+          <p>We used binning to bin the range of median income per state. Then, we graphed income by mortality rate after grouping by the range of incomes.            
+            </p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-12">
+        <!-- Right Box -->
+        <div class="box">
+          <h5 class="title" id="align-center">Visualizations</h5>
+          <hr>
+
+
+          <div class="container">
+            <div class="row" style="padding-bottom: 10px;">
+              <div class="col-6">
+                  <img class="active visualization" src="Images/income_mortality.png" alt="Population Density by Number of Cases">
+                </a>
+              </div>
+              <div class="col-6">
+                  <img class="visualization" src="Images/density_cases_noOutliers.png" alt="Population Density by Number of Cases without Outliers">
+                </a>
+              </div>
+            </div>
+
+            <div class="row" style="padding-bottom: 30px;">
+              <div class="col-6">
+                  <img class="visualization" src="Images/density_mortality.png" alt="Population Density by Mortality Rate">
+                </a>
+              </div>
+              <div class="col-6">
+                  <img class="visualization" src="Images/state_mortality.png" alt="Mortality Rate of each States">
+                </a>
+              </div>
+
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" 
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" 
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" 
+    crossorigin="anonymous"></script>
+
+
+
+</body>
+
+</html>
